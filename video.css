@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #212121;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
+    padding: 15px;
+}
+
+.search-bar {
+    padding: 6px;
+    width: 500px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+
+}
+
+.search-btn {
+    cursor: pointer;
+
+}
+
+main {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+#video-container {
+    width: 900px;
+}
+
+#channel-info {
+    width: 900px;
+
+}
+
+#comment-section {
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 900px;
+}
+
+#recommended-videos-section {
+    margin-left: 20px;
+}
+
+.rec-link {
+    text-decoration: none;
+}
+
+.rec-heading {
+    color: white;
+    padding-left: 10px;
+}
+
+.video-card {
+    display: flex;
+}
+
+#comments-container {
+    /* display: flex; */
+}
+
+.profile-container {
+    display: flex;
+
+    /* padding: 8px; */
+}
+
+.title {
+    padding-left: 20px;
+}

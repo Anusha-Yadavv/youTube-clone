@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./video.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <div>
+        <img src="./assets/optionsIcon.svg" alt="options">
+        <img src="./assets/youtubeIcon.svg" alt="youtube icon">
+
+      </div>
+      <div>
+        <input type="search" class="search-bar" id="searchBar">
+        <img src="./assets/searchIcon.svg" alt="search icon" class="search-btn" id="searchBtn">
+        <img src="./assets/mic.svg" alt="mic">
+
+      </div>
+      <div>
+        <img src="./assets/video.svg" alt="video">
+        <img src="./assets/explore.svg" alt="explore">
+        <img src="./assets/notification.svg" alt="notifications">
+        <img src="./assets/profile.svg" alt="profile">
+
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- MAIN SECTION -->
+  <main class="container">
+
+    <section class="video-description-section">
+
+      <!-- VIDEO SECTION -->
+      <section>
+        <div id="video-container"></div>
+
+
+      </section>
+      <!-- CHANNEL SECTION -->
+      <section>
+        <div id="channel-info"></div>
+
+      </section>
+
+      <!-- COMMENTS SECTIONS -->
+      <section>
+        <div id="comment-section">
+          <h2>Comments</h2>
+          <div id="comments-container">
+
+          </div>
+          <!-- Comments will be loaded here -->
+        </div>
+
+      </section>
+
+    </section>
+
+
+
+    <!-- RECOMMENDED SECTIONS -->
+    <section id="recommended-videos-section">
+      <div id="recommended-videos">
+        <h2>Recommended Videos</h2>
+        <!-- Recommended videos will be loaded here -->
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="./video.js"></script>
+</body>
+
+</html>
