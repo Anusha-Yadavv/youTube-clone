@@ -125,7 +125,6 @@ function displayComments(comments) {
 
     
     `;
-      
 
       commentsContainer.appendChild(profileElement);
       commentsContainer.appendChild(commentDiv);
@@ -178,9 +177,18 @@ function displayRecommendedVideos(videos) {
   });
 }
 
-/*searchBtn.addEventListener("click",()=>{
-  let searchBarEle=document.getElementById("searchBar");
-  let userSearching=searchBarEle.value;
-  console.log("USER SEARCHING",userSearching);
-  displayRecommendedVideos(userSearching);
-})*/
+async function fetchVideos(searchQuery, maxResults) {
+  const response = await fetch(
+    `${BASE_URL}/search?key=${API_KEY}&q=${searchQuery}&maxResults=${maxResults}&part=snippet`
+  );
+  const data = await response.json();
+  // console.log("DATA ITEMS",data.items)
+  displayRecommendedVideos(data.items);
+}
+
+searchBtn.addEventListener("click", () => {
+  let searchBarEle = document.getElementById("searchBar");
+  let userSearching = searchBarEle.value;
+  console.log("USER SEARCHING", userSearching);
+  fetchVideos(userSearching, 20);
+});

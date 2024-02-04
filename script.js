@@ -2,7 +2,7 @@ const API_KEY = "AIzaSyDqz4okz51FunzRBD2sVT6FTPoDsvt2SkQ";
 const BASE_URL = "https://www.googleapis.com/youtube/v3";
 let choicesContainerEle = document.getElementById("all-choices-container");
 let subscriptionsContainer = document.getElementById("subscriptions-container");
-let searchBtn=document.getElementById("searchBtn");
+let searchBtn = document.getElementById("searchBtn");
 
 const choicesArray = [
   "All",
@@ -44,9 +44,9 @@ choicesArray.map((choice) => {
   choicesContainerEle.appendChild(divEle);
 });
 
-//Creating subscriptions profiles 
-function createSubscriptions(profile,name){
-  console.log(`${profile} and ${name}`)
+//Creating subscriptions profiles
+function createSubscriptions(profile, name) {
+  console.log(`${profile} and ${name}`);
 
   let subDiv = document.createElement("div");
   subDiv.className = "sidebar-options";
@@ -56,25 +56,22 @@ function createSubscriptions(profile,name){
   <h5>${name}</h5>
   `;
   subscriptionsContainer.appendChild(subDiv);
-
 }
 
-let arrLen=subscriptionsArray.length;
-for(let i=0;i<arrLen;i++){
-  console.log("sub arr",subscriptionsArray[i]);
-  
-    createSubscriptions(subscriptionsArray[i][0],subscriptionsArray[i][1]);
-  
-}
+let arrLen = subscriptionsArray.length;
+for (let i = 0; i < arrLen; i++) {
+  console.log("sub arr", subscriptionsArray[i]);
 
+  createSubscriptions(subscriptionsArray[i][0], subscriptionsArray[i][1]);
+}
 
 function scrollContainer(direction) {
   const container = document.getElementById("all-choices-container");
 
   if (direction === "right") {
-    container.style.transform = "translateX(50px)"; 
+    container.style.transform = "translateX(50px)";
   } else if (direction === "left") {
-    container.style.transform = "translateX(-50px)"; 
+    container.style.transform = "translateX(-50px)";
   }
 }
 
@@ -111,10 +108,9 @@ function displayVideos(videos) {
   });
 }
 
-
-searchBtn.addEventListener("click",()=>{
-  let searchBarEle=document.getElementById("searchBar");
-  let userSearching=searchBarEle.value;
-  console.log("USER SEARCHING",userSearching);
-  fetchVideos(userSearching,20);
-})
+searchBtn.addEventListener("click", () => {
+  let searchBarEle = document.getElementById("searchBar");
+  let userSearching = searchBarEle.value;
+  console.log("USER SEARCHING", userSearching);
+  fetchVideos(userSearching, 20);
+});

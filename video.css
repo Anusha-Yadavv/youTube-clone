@@ -75,9 +75,7 @@ main {
     display: flex;
 }
 
-#comments-container {
-    /* display: flex; */
-}
+
 
 .profile-container {
     display: flex;
@@ -87,4 +85,14 @@ main {
 
 .title {
     padding-left: 20px;
+}
+
+.video-icon img {
+    transition: background-color 0.3s ease;
+
+
+}
+
+.video-icon img:hover {
+    background-color: #555555;
 }
