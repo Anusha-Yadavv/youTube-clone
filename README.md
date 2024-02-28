@@ -1,10 +1,15 @@
-Youtube Image
+# Youtube Image
 ![YouTube_clone](https://github.com/Anusha-Yadavv/youTube-clone/assets/143824335/d3a6bb6d-db11-479d-8db8-e96fd85e4303)
 
 # YouTube Clone Project
 
-This project is a web application designed to mimic some of the core features and functionalities of the popular video-sharing platform YouTube. It includes a video player, likes, video recommendations, and a search feature, with the goal of replicating the essential elements of YouTube, enabling users to search for and consume video content in a familiar way.
+This project is a web application designed to replicate some of the core features and functionalities of the renowned video-sharing platform YouTube. It encompasses a comprehensive set of features including:
 
+Video Player: Allows users to watch videos seamlessly within the application.
+Likes: Enables users to express their appreciation for videos by liking them.
+Video Recommendations: Provides personalized recommendations based on user activity and preferences.
+Search Feature: Allows users to search for videos by keywords or topics of interest.
+The primary objective of this project is to recreate the quintessential elements of YouTube, providing users with a familiar environment for discovering and consuming video content.
 ## Live Preview
 
 [Live Preview](https://anusha-yadavv.github.io/youTube-clone/)
